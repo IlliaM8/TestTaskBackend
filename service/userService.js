@@ -2,7 +2,7 @@ import { Types } from "mongoose";
 import MyUser from "../model/MyUser.js";
 import User from "../model/User.js";
 
-class userService {
+class UserService {
   async create(req) {
     const _id = new Types.ObjectId();
     const user = {
@@ -57,4 +57,4 @@ class userService {
     return user;
   }
 }
-export default new userService();
+export default new UserService();
